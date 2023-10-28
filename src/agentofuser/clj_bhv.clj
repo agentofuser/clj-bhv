@@ -1,6 +1,11 @@
-(ns agentofuser.clj-bhv)
+(ns agentofuser.clj-bhv
+  (:import BHV))
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (prn x "Hello, World!"))
+(defn bhv-rand []
+  (BHV/rand))
+
+(defn bhv-active [bhv-instance]
+  (.active bhv-instance))
+
+(defn bhv-xor [bhv-instance1 bhv-instance2]
+  (.xor bhv-instance1 bhv-instance2))

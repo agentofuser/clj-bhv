@@ -1,0 +1,3 @@
+[submodule "JavaBHV"]
+	path = JavaBHV
+	url = https://github.com/agentofuser/JavaBHV.git
